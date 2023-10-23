@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    About Selectors in Jquery! This is Element selector
+    <p>This is a Paragraph </p>
+    <p>This is a Paragraph21 </p>
+    <p>This is a Paragraph31 </p>
+    <p>This is a Paragraph41 </p>
+    <h2 class="intro">This is an intro heading</h2>
+
+    <p class="intro">This is an intro paragraph.</p>
+    <div> This is Div element</div>
+    <div> This is Div element</div>
+    <div> This is Div element</div>
+
+    <p>List 1:</p>
+<ul>List1
+  <li>Coffee</li>
+  <li>Milk</li>
+  <li>Tea</li>
+</ul>
+
+<p>List 2:</p>
+<ul>
+  <li>Coffee</li>
+  <li>Milk</li>
+  <li>Tea</li>
+</ul>
+<p><a href="https://google.com" target="_parent">HTML Tutorial</a></p>
+<p><a href="https://google.com">CSS Tutorial</a></p>
+<p><a href="https://google.com" target="_blank">blank HTMLcc Tutorial</a></p>
+
+
+<h1>Welcome to this Web Page</h1>
+
+<table border="1">
+  <tr>
+    <th>Company</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+</table>
+
+    <button>Hit me</button>
+    <script>
+    $(document).ready(function(){
+            $("button").click(function(){
+                //$("div").hide();
+                 //$("*").hide();
+                 //$(this).hide();
+                 //$("h2.intro").hide();
+                // $("p:first").hide();
+                // $("ul li:first").hide();
+                //$("ul li:first-child").hide();
+                // $("[href]").hide();
+                // $("a[target='_blank']").hide();
+                 //$("a[target!='_blank']").hide();
+                //$(":button").hide();
+                $("tr:even").css("background-color", "yellow");
+                $("tr:odd").css("background-color", "green");
+            });
+    });
+    </script>
+</body>
+</html>
