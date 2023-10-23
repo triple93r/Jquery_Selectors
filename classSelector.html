@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    About Selectors in Jquery! This is class selector
+    <p id="p1" class="psa">This is a Paragraph </p>
+    <p>This is a Paragraph21 </p>
+    <p id="p2" class="psb">This is a Paragraph31 </p>
+    <p>This is a Paragraph41 </p>
+    
+    <button>Hit me</button>
+    <script>
+    $(document).ready(function(){
+            $("button").click(function(){
+                $(".psa").hide();
+            });
+    });
+    </script>
+</body>
+</html>
